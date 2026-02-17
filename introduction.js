@@ -137,3 +137,15 @@
 // Why dealing with server we prefer async over sync?
 
 // node package manager
+
+
+
+
+// 22.11.01 -- xx.yy.zz
+// xx - Major update
+// yy - Minor update
+// zz - Patch update
+
+// ^22.11.01(minor and patch) -- 22.11.22 -- 22.12.01 --- (23.11.00)
+// ~22.11.01(patch) -- 22.11.22 --- (22.12.01) --- (23.11.00)
+// 22.11.01(no update)
