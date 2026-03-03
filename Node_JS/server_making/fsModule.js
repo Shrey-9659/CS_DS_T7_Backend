@@ -41,8 +41,8 @@ const app = http.createServer((req, res) => {
     // })
 
     // Stats of a file - Sync
-    const statData = fs.statSync("example.txt")
-    console.log(statData)
+    // const statData = fs.statSync("example.txt")
+    // console.log(statData)
 
 
     res.end("OK");
