@@ -1,0 +1,83 @@
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 320px;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border: 4px solid #fff;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2d3436;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #636e72;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Links/Buttons */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-btn {
+            text-decoration: none;
+            background: #764ba2;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s, background 0.3s;
+            font-weight: 500;
+        }
+
+        .link-btn:hover {
+            background: #5a3a82;
+            transform: translateY(-2px);
+        }
+
+        .secondary-btn {
+            background: #f1f2f6;
+            color: #2d3436;
+        }
+
+        .secondary-btn:hover {
+            background: #dfe4ea;
+        }
