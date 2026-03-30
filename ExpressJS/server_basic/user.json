@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "year": 2022,
+    "address": {
+      "street": "12 Mall Road",
+      "city": "Shimla",
+      "state": "Himachal Pradesh",
+      "country": "India",
+      "postalCode": "171001"
+    },
+    "email": "aarav.sharma@example.com",
+    "phone": "+91-9876543210",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "year": 2023,
+    "address": {
+      "street": "45 MG Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110001"
+    },
+    "email": "priya.verma@example.com",
+    "phone": "+91-9123456780",
+    "status": "inactive"
+  },
+  {
+    "id": 3,
+    "name": "Rohit Mehta",
+    "year": 2021,
+    "address": {
+      "street": "78 Park Street",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400001"
+    },
+    "email": "rohit.mehta@example.com",
+    "phone": "+91-9988776655",
+    "status": "active"
+  }
+]

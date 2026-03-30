@@ -1,5 +1,6 @@
 const express = require("express")
 const path = require("path")
+const users = require("./user.json")
 
 const aboutPageFileLocation = path.join(__dirname, "public/index.html")
 
@@ -15,6 +16,39 @@ app.get("/about", (req, res) => {
 
 app.get("/contact", (req, res) => {
     res.json({success : "True", info : "No info found"})
+})
+
+// API Creation
+
+app.get("/api/users", (req, res) => {
+    res.json(users)
+})
+
+// Dynamic Routing
+app.get("/api/users/:id", (req, res) => {
+    const userId = parseInt(req.params.id)
+    console.log(userId)
+    // const providedUser = users.filter((user) => {
+    //     return userId === user.id
+    // })
+    if(isNaN(userId)){
+        res.json({
+            success : false,
+            msg : "invalid user ID"
+        })
+    }else{
+        const providedUser = users.find((user) => {
+        return userId === user.id
+    })
+        if(!providedUser){
+            res.json({
+                success : false,
+                msg : "User not found"
+            })
+        }else{
+            res.json(providedUser)
+        }
+    }
 })
 
 app.listen(3000, () => {
