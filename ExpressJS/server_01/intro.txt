@@ -1,0 +1,9 @@
+Home Page - (/) - (GET)
+- 1. Form, 2. Users
+
+Form : (/home/form) - (GET)
+Taking user details and I have a submit button.
+1. Store user data
+2. To display the data
+
+Submit : (/form/submit) - (POST) - (If coming via GET, redirect the page to /home/form)
